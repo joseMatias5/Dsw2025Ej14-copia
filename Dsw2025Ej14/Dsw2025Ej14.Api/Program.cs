@@ -1,4 +1,6 @@
 
+using Dsw2025Ej14.Api.Data;
+
 namespace Dsw2025Ej14.Api
 {
     public class Program
@@ -31,6 +33,10 @@ namespace Dsw2025Ej14.Api
             app.MapControllers();
 
             app.Run();
+           
+            var service = new ServiceCollection();
+            service.AddSingleton<IPersistencia, PersistenciaEnMemoria>();
+
         }
     }
 }

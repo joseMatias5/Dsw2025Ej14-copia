@@ -7,12 +7,10 @@
         private decimal currentUnitPrice;
         private bool isActive;
 
-        /*
-         * * Sku (string)
-	* Name (string)
-	* CurrentUnitPrice (decimal)
-	* IsActive (bool)
-         */
+        public string Name { get => name; set => name = value; }
+        public string Sku { get => sku; set => sku = value; }
+        public decimal CurrentUnitPrice { get => currentUnitPrice; set => currentUnitPrice = value; }
+        public bool IsActive { get => isActive; set => isActive = value; }
 
     }
 }
